@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="bbsApp">
+<head>
+<meta charset="UTF-8">
+<title>主页</title>
+<!-- 视口设置 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<!-- 引入bootstrap的css -->
+<link rel="stylesheet" type="text/css" href="js/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-1">
+				<a ui-sref="login" class="btn btn-primary btn-block">登录</a>
+			</div>
+			<div class="col-sm-2">
+				<a ui-sref="InsertMsg" class="btn btn-info btn-block">发表</a>
+			</div>
+			<div class="col-sm-2">
+				<a ui-sref="QueryMsg" class="btn btn-danger btn-block">电脑版</a>
+			</div>
+			<div class="col-sm-2">
+				<a href="#" class="btn btn-warning btn-block">移动版</a>
+			</div>
+			<div class="col-sm-2">
+				<a href="#" class="btn btn-success btn-block">滚屏版</a>
+			</div>
+		</div>			
+	</div>
+
+	<!-- ui-view路由视图显示的区域 -->
+	<div ui-view></div>
+
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-ui-router.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/layer/layer.js"></script>
+	<script type="text/javascript" src="js/param.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<script type="text/javascript" src="js/service.js"></script>
+	<script type="text/javascript" src="js/directive.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+</body>
+</html>
